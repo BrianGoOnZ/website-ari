@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; /* Gris muy oscuro, menos pesado que el negro */
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0; /* Texto crema suave para no cansar la vista */
+    line-height: 1.6;
+}
+
+/* Navbar Elegante */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 4%;
+    background-color: #121212;
+    border-bottom: 1px solid #333; /* Línea sutil de separación */
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #c5a059; /* Toque dorado en el logo */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.social-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #333;
+    color: #c5a059;
+}
+
+
+/* Sección Bio */
+.container-bio {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    padding: 60px 8%;
+    gap: 50px; /* Espacio entre imagen y texto */
+}
+
+.bio-image, .bio-text {
+    flex: 1;
+}
+
+.bio-image img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    filter: grayscale(20%); /* Suaviza los colores de la imagen */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.bio-text {
+    text-align: left; /* Alineado a la izquierda se siente más moderno */
+}
+
+.titulo-script {
+    font-family: 'Dancing Script', cursive;
+    color: #c5a059;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.descripcion-bio {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #b0b0b0; /* Gris medio para el párrafo principal */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .container-bio {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .bio-text {
+        text-align: center;
+    }
+}
+
+.tatto-artist {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.imagen-logo img {
+    width: 300px;      /* Aquí ajustas el tamaño que prefieras */
+    height: auto;
+    display: block;
+    margin: 0 auto;    /* La centra horizontalmente */
+    border-radius: 1000px;
+    mix-blend-mode: screen; /*Elimina el fondo y lo une con la pantalla*/
+}
