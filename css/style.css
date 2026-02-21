@@ -38,14 +38,12 @@ body {
     letter-spacing: 1px;
     transition: color 0.3s;
 }
-
 .social-links a:hover {
     padding: 10px;
     border-radius: 7px;
     background-color: #333;
     color: #c5a059;
 }
-
 
 /* Sección Bio */
 .container-bio {
