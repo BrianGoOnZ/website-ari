@@ -1,34 +1,27 @@
-/* Paleta de Colores y Fondo Base */
-body {
-    background-color: #000000; /* Fondo negro profundo */
-    color: #E0E0E0; /* Texto claro */
+/* Tarjetas de la galería */
+.card-info {
+  background-color: #121212;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Contenedor del Tatuaje (Caja con borde dorado) */
-.contenedor-foto {
-    border: 2px solid #D4AF37;
-    border-radius: 8px; 
-    overflow: hidden; 
-    background-color: #121212;
-    transition: all 0.3s ease; 
+.card-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(197,160,89,0.3); /* dorado suave */
 }
 
-/* Efecto al pasar el cursor sobre la foto */
-.contenedor-foto:hover {
-    transform: translateY(-5px); /* Se levanta un poco */
-    border-color: #ffffff; /* El borde se vuelve blanco */
-    box-shadow: 0 8px 15px rgba(212, 175, 55, 0.3); /* Brillo dorado de fondo */
-    cursor: pointer;
+.card-info img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* Ajuste perfecto para que las imágenes siempre sean cuadradas */
-.foto-cuadrada {
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-    transition: transform 0.5s ease; /* Transición suave para el zoom */
-}
-
-/* Efecto de Zoom interior en la foto */
-.contenedor-foto:hover .foto-cuadrada {
-    transform: scale(1.08);
+.titulo-campana {
+  font-size: 1.2rem;
+  color: #c5a059;
+  font-weight: bold;
+  margin-top: 0.5em;
 }
